@@ -18,6 +18,13 @@ color:#787d7d;
 font-weight: 400;
 text-transform: capitalize;
 }
+.login-nav-list:hover{
+color:#833AB4;
+}
+.text-capitalize{
+
+text-transform: capitalize;
+}
 .nav-list:hover{
 color:#833AB4;
 }
@@ -26,7 +33,12 @@ color:#833AB4;
   color:white;
   padding: 5px 20px;
   border-radius: 20px;
+
 }
+ .logout{
+  font-weight:100;
+  
+ }
 .profile{
       background: rgba(253, 29, 29, 1);
     height:45%;
@@ -40,6 +52,7 @@ color:#833AB4;
     align-items: center;
     font-weight: 400;
     text-transform: capitalize;
+    cursor: pointer;
 }
 .profile-img {
   display: flex;
@@ -58,4 +71,44 @@ color:#833AB4;
  background-color: white;
   color: #833AB4;
   border:1px solid #833AB4;
+}/* In Header.css or a relevant CSS file */
+
+.profile-menu {
+  position: absolute;
+  right: 30px; /* Adjust based on where you want the menu to appear */
+  top: 40px;  /* Adjust the distance from the profile icon */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  
+  margin-top: 25px;
+  border-radius: 5px;
+  z-index: 1000; /* Make sure the dropdown appears on top */
+}
+.list-type{
+  list-style: none;
+}
+.list-profile{
+  margin:0 !important;
+  padding:4px !important
+}
+ul{
+  padding: 0%;
+}
+.pro{
+      justify-content: left;
+    gap: 10px;
+    padding:10px !important
+}
+.pb-15{
+  
+  padding-bottom: 15px;
+}
+.fa-10{
+    
+    font-size: medium;
+}
+.icons{
+ font-weight: 100;
 }

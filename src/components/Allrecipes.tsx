@@ -7,6 +7,8 @@ import PropagateLoader from "react-spinners/PropagateLoader";
 import { Button, Container, Grid, Stack } from '@mui/material';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { Link } from 'react-router-dom';
+
 
 export default function Allrecipes() {
      const navigate = useNavigate()
@@ -110,14 +112,19 @@ export default function Allrecipes() {
 
                         return (
 
-                              <Grid size={{ xs: 12, md: 4, lg: 3 }} className="c recipe-item rec">
-                                    <img src={`../src/assets/${data.img}`} className='food-image '></img>
+                            <Grid size={{ xs: 12, md: 4, lg: 3 }} className="c recipe-item rec">
+                                    <Link  to={`/recipe/${data.id}`} className='text-decoration'>
+                                        <img src={`../src/assets/${data.img}`} className='food-image '></img>
+                                        <div className=''>
                                     <div className='flex space-between pad-10'><h4 className='ternary mar-0'>{data.name}</h4>
                                         {save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
                                     </div>
-                                    <p className='ternary mar-0 pad-10-top'>{data.description}</p>
-                                    <Button  className='view1' onClick={() => handleClick(data.id)} >View recipe</Button>
+                                    <p className='ternary mar-0 pad-10-top card-desc'>{data.description}</p>
+                                    <Link  to={`/recipe/${data.id}`} className='orangish text-decoration link-recipe padding'  >View recipe </Link>
+                                    </div>
+                                    </Link>
                                 </Grid>
+                                
                         )
                     })}
 

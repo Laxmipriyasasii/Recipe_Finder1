@@ -1,5 +1,16 @@
 .random-img{
-        height: 400px;
-    width: 500px;
+        height: 100%;
+   width:100% ;
     object-fit: cover;
+}
+.line-height-28{
+        line-height: 20px;
+        text-align: center;
+
+}
+.letter-space-1{
+    letter-spacing: 1px;
+}
+.padd-20{
+    padding: 0 10%;
 }

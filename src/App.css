@@ -121,6 +121,7 @@
     text-transform: capitalize !important;
     margin-bottom: 15px !important;
     margin-left:10px !important;
+     border-radius: 18px !important;
 }
 .view:hover{
   color:rgba(253, 29, 29, 1) !important ;  
@@ -131,11 +132,11 @@
 .view1{
     color:rgba(253, 29, 29, 1) !important ;  
   background-color: white !important;
-  border:1px solid rgba(253, 29, 29, 1) !important;
     text-transform: capitalize !important;
     margin-bottom: 15px !important;
     margin-left:10px !important;
     font-weight: 700 !important;
+    border-radius: 18px !important;
 }
 .view1:hover{
   color:white !important ;  
@@ -269,7 +270,7 @@ color: rgba(253, 29, 29, 1);
 }
    
 .recipe-item {
- 
+ height:340px; 
     border-radius: 5px;
     background-color: white;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
@@ -309,6 +310,9 @@ input:-webkit-autofill {
     box-shadow: 0 0 0 1000px white inset !important;
     -webkit-text-fill-color: black !important;
 }
+.card-desc{
+        height: 80px;
+}
 .link-recipe{
 
 }
@@ -322,6 +326,12 @@ input:-webkit-autofill {
 }
 .padding{
     padding: 10px !important;
+}
+.justify-end{
+    justify-content: end;
+}
+.justify-center{
+    justify-content: center;
 }
 .cov  {
   padding-bottom: 3rem;

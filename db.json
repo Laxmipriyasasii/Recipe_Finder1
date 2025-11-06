@@ -12,6 +12,8 @@
       "total_ingredients": 7,
       "calories": 450,
       "level": "easy",
+      "brief_title": "Juicy Beef Burger",
+      "detailed_description": "A juicy beef patty grilled to perfection, served in a soft, toasted bun with a generous layer of melted cheddar cheese. The freshness of crisp lettuce, juicy tomatoes, and creamy mayonnaise brings a satisfying crunch and flavor to each bite. This burger is a classic choice for a quick, delicious lunch or dinner.",
       "ingredients": [
         "1 lb ground beef",
         "4 burger buns",
@@ -41,8 +43,9 @@
       "total_ingredients": 10,
       "calories": 350,
       "total_time": "45 mins",
-
       "level": "hard",
+      "brief_title": "Creamy Paneer Butter Masala",
+      "detailed_description": "Paneer Butter Masala is a rich, indulgent Indian curry featuring soft paneer cubes cooked in a luscious, creamy tomato-based sauce. The flavor comes from a mix of aromatic spices like garam masala, red chili powder, and coriander, creating a perfect balance of warmth and richness. It is best served with naan or rice for a satisfying dinner.",
       "ingredients": [
         "250g paneer cubes",
         "2 tbsp butter",
@@ -76,6 +79,8 @@
       "total_ingredients": 6,
       "calories": 120,
       "level": "easy",
+      "brief_title": "Fresh Veggie Salad",
+      "detailed_description": "A simple and refreshing salad made with a variety of crisp mixed greens, complemented by fresh tomatoes, cucumber, and shredded carrots. The light olive oil and lemon dressing adds a tangy touch, making this salad a perfect side or light meal. It’s quick to make and a healthy way to incorporate more vegetables into your diet.",
       "ingredients": [
         "2 cups mixed greens",
         "1 cucumber, sliced",
@@ -103,6 +108,8 @@
       "total_time": "2 hrs 15 mins",
       "calories": 400,
       "level": "medium",
+      "brief_title": "Spicy Crispy Chicken Fry",
+      "detailed_description": "This spicy and crispy chicken fry is a perfect treat for those who enjoy bold flavors. The chicken is marinated in a mix of yogurt and a blend of spices, then fried until golden and crunchy. With every bite, you get the juicy tenderness of the chicken combined with the crispy exterior and a spicy kick. It's perfect for a weekend dinner or as a snack for gatherings.",
       "ingredients": [
         "500g chicken pieces",
         "1 cup yogurt",
@@ -129,9 +136,11 @@
       "description": "A warm and comforting vegetable soup perfect for cold days.",
       "author": "by Food18",
       "total_ingredients": 7,
-       "total_time": "40 mins",
+      "total_time": "40 mins",
       "calories": 150,
       "level": "easy",
+      "brief_title": "Comforting Vegetable Soup",
+      "detailed_description": "This vegetable soup is a warm and comforting dish that’s perfect for chilly days. Packed with healthy vegetables like carrots, beans, and peas, it’s both nourishing and satisfying. The broth is light yet flavorful, and it’s an excellent low-calorie option for a quick snack or light meal.",
       "ingredients": [
         "2 cups mixed vegetables (carrots, beans, peas)",
         "1 onion, chopped",
@@ -161,6 +170,8 @@
       "total_time": "50 mins",
       "calories": 300,
       "level": "easy",
+      "brief_title": "Crispy French Fries",
+      "detailed_description": "Golden, crispy on the outside, and soft on the inside, these homemade French fries are the perfect snack or side dish. Made from fresh potatoes and deep-fried to perfection, they can be seasoned with a sprinkle of salt or your favorite spice mix. Serve them with ketchup or mayonnaise for an extra delicious treat.",
       "ingredients": [
         "4 large potatoes",
         "Oil for deep frying",
@@ -185,6 +196,8 @@
       "total_ingredients": 8,
       "calories": 350,
       "level": "medium",
+      "brief_title": "Fruit-Filled Pancake Delight",
+      "detailed_description": "These fluffy, golden pancakes are the perfect start to your day. Made with a simple batter, they rise beautifully on the griddle and are topped with fresh fruits like strawberries, bananas, or blueberries. Drizzle with maple syrup for the ultimate sweet treat that’s comforting and delicious.",
       "ingredients": [
         "1 cup all-purpose flour",
         "1 tbsp sugar",
@@ -200,7 +213,7 @@
         "Whisk milk, egg, and melted butter in another bowl.",
         "Combine wet and dry ingredients until smooth.",
         "Heat a non-stick pan and pour batter to form pancakes.",
-        "Cook until bubbles form, then flip and cook other side.",
+        "Cook until bubbles form, then flip and cook the other side.",
         "Serve warm with syrup and fruits."
       ]
     },
@@ -216,6 +229,8 @@
       "calories": 550,
       "level": "hard",
       "total_time": "1 hr 45 mins",
+      "brief_title": "Fragrant Chicken Biriyani",
+      "detailed_description": "Biriyani is a flavorful and aromatic rice dish layered with tender chicken, fragrant basmati rice, and an assortment of spices. The chicken is cooked in a rich, spiced yogurt marinade, then layered with partially cooked rice and slow-cooked to perfection. This dish is perfect for special occasions and is best served with raita or a side salad.",
       "ingredients": [
         "2 cups basmati rice",
         "500g chicken pieces",
@@ -255,6 +270,8 @@
       "calories": 300,
       "level": "medium",
       "total_time": "10 mins",
+      "brief_title": "Crispy Masala Dosa",
+      "detailed_description": "Masala Dosa is a popular South Indian breakfast dish made with thin, crispy crepes (dosas) filled with a spicy potato mixture. The dosas are made from fermented rice and urad dal batter, and the potato filling is flavored with mustard seeds, turmeric, and green chilies. Served with chutney and sambar, it’s a flavorful and filling way to start your day.",
       "ingredients": [
         "1 cup rice",
         "1/2 cup urad dal (split black gram)",
@@ -289,6 +306,8 @@
       "calories": 250,
       "total_time": "25-30 mins",
       "level": "easy",
+      "brief_title": "Chewy Choco Chip Cookies",
+      "detailed_description": "These soft and chewy cookies are packed with gooey chocolate chips, making them the perfect sweet snack or dessert. The dough is simple to make, and after baking for just 10-12 minutes, you’re left with warm, delicious cookies. Enjoy them with a glass of milk for an irresistible treat.",
       "ingredients": [
         "1 cup all-purpose flour",
         "1/2 tsp baking soda",
@@ -321,6 +340,8 @@
       "calories": 180,
       "total_time": "17 mins",
       "level": "easy",
+      "brief_title": "Healthy Vegetable Stir Fry",
+      "detailed_description": "A quick and easy vegetable stir-fry that’s packed with fresh, crunchy vegetables like broccoli, bell peppers, and snap peas. Tossed in a light soy sauce and garlic-based dressing, it’s a colorful and healthy dish that pairs well with rice or noodles. It’s a great option for a quick, nutritious lunch or side dish.",
       "ingredients": [
         "1 cup broccoli florets",
         "1 carrot, sliced",

@@ -144,15 +144,16 @@ export default function Home() {
                             return (
 
                                  <Grid size={{ xs: 12, md: 4, lg: 3 }} className="c recipe-item rec">
-                                    
+                                     <Link  to={`/recipe/${data.id}`} className='text-decoration'>
                                         <img src={`../src/assets/${data.img}`} className='food-image '></img>
                                         <div className=''>
                                     <div className='flex space-between pad-10'><h4 className='ternary mar-0'>{data.name}</h4>
                                         {save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
                                     </div>
-                                    <p className='ternary mar-0 pad-10-top'>{data.description}</p>
-                                    <Link  to={`/recipes/${data.id}`} className='orangish text-decoration link-recipe' >View recipe </Link>
+                                    <p className='ternary mar-0 pad-10-top card-desc'>{data.description}</p>
+                                    <Link  to={`/recipe/${data.id}`} className='orangish text-decoration link-recipe padding' >View recipe </Link>
                                     </div>
+                                    </Link>
                                 </Grid>
                             )
                         })}
@@ -169,7 +170,7 @@ export default function Home() {
 
                 </div>
                  <div className="bg-black">
-                 
+                            
                     <Todayrecipe/>
                </div>
                   {/* <div className="recipess pad-10">
@@ -198,8 +199,8 @@ export default function Home() {
                </div>
 
             </Stack>
-            <footer style={{height:'300px',backgroundColor:'black'}}>
-
+            <footer style={{height:'20px',backgroundColor:'black',color:'white'}}>
+<p className='text-center'>&copy; 2025 Food18. All rights reserved.</p>
 </footer>
         </>
 
