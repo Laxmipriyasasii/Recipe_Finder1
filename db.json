@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Burger",
       "mealType": "lunch",
-      "img": "burger.jpg",
+      "img": "burger1.jpg",
       "difficulty": "easy",
       "description": "A classic juicy beef burger with fresh lettuce, tomato, and cheese.",
       "author": "by Food18",
@@ -358,43 +358,225 @@
         "Pour in soy sauce and toss to coat evenly.",
         "Serve hot with rice or noodles."
       ]
-    }
+    },
+    {
+  "id": "12",
+  "name": "Chocolate Cupcake",
+  "mealType": "snacks",
+  "img": "cup_cakes.jpg",
+  "difficulty": "medium",
+  "description": "Moist chocolate cupcakes topped with creamy whipped cream and colorful sprinkles.",
+  "author": "by SweetTreats",
+  "total_time": "40 mins",
+  "total_ingredients": 10,
+  "calories": 320,
+  "level": "medium",
+  "brief_title": "Chocolate Cupcake with Cream & Sprinkles",
+  "detailed_description": "These rich and moist chocolate cupcakes are topped with a fluffy, creamy frosting and finished with a sprinkle of vibrant sprinkles. Perfect for any occasion, they’re a sweet indulgence that's sure to satisfy your dessert cravings. The combination of chocolate and whipped cream is simply irresistible!",
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 cup sugar",
+    "1/2 cup cocoa powder",
+    "1 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "2 large eggs",
+    "1 tsp vanilla extract",
+    "1/2 cup milk",
+    "1 cup whipped cream",
+    "Colorful sprinkles for topping"
+  ],
+  "preparation": [
+    "Preheat the oven to 350°F (175°C) and line a 12-cup muffin tin with paper liners.",
+    "In a bowl, whisk together the flour, sugar, cocoa powder, baking powder, baking soda, and salt.",
+    "In a separate large bowl, beat the softened butter and eggs until smooth and creamy. Add vanilla extract.",
+    "Gradually add the dry ingredients into the wet mixture, alternating with milk, and mix until combined.",
+    "Spoon the batter evenly into the muffin tin, filling each cup about 2/3 full.",
+    "Bake for 18-20 minutes or until a toothpick inserted into the center comes out clean.",
+    "Remove from the oven and let the cupcakes cool completely on a wire rack.",
+    "Once cooled, top each cupcake with a generous dollop of whipped cream.",
+    "Finish with a sprinkle of colorful sprinkles on top.",
+    "Serve and enjoy your delicious chocolate cupcakes!"
+  ]
+},{
+  "id": "13",
+  "name": "Honey Berry Waffles",
+  "mealType": "breakfast",
+  "img": "waffles.jpg",
+  "difficulty": "easy",
+  "description": "Crispy waffles drizzled with honey and topped with fresh blueberries and sliced strawberries.",
+  "author": "by MorningDelights",
+  "total_time": "25 mins",
+  "total_ingredients": 8,
+  "calories": 350,
+  "level": "easy",
+  "brief_title": "Waffles with Honey & Berry Toppings",
+  "detailed_description": "These light and crispy waffles are topped with a sweet drizzle of honey and a generous mix of fresh blueberries and strawberries. A perfect breakfast or brunch dish to kick-start your day with a burst of flavor and freshness.",
+  "ingredients": [
+    "2 cups all-purpose flour",
+    "2 tbsp sugar",
+    "1 tbsp baking powder",
+    "1/4 tsp salt",
+    "2 large eggs",
+    "1 1/2 cups milk",
+    "1/4 cup melted butter",
+    "Honey, fresh blueberries, and strawberries for topping"
+  ],
+  "preparation": [
+    "Preheat the waffle iron and lightly grease it with cooking spray or butter.",
+    "In a large bowl, whisk together the flour, sugar, baking powder, and salt.",
+    "In another bowl, beat the eggs and then add the milk and melted butter. Mix well.",
+    "Pour the wet ingredients into the dry ingredients and stir until just combined.",
+    "Scoop the batter onto the waffle iron and cook according to the manufacturer's instructions until golden and crispy.",
+    "Transfer the waffles to plates and drizzle with honey.",
+    "Top with fresh blueberries and sliced strawberries.",
+    "Serve immediately and enjoy your sweet and fruity waffles!"
+  ]
+},
+{
+  "id": "14",
+  "name": "Fruit Salad",
+  "mealType": "dinner",
+  "img": "fruit_salad.jpg",
+  "difficulty": "easy",
+  "description": "A refreshing mix of seasonal fruits, customizable with your favorite fruits.",
+  "author": "by FreshBites",
+  "total_time": "15 mins",
+  "total_ingredients": 5,
+  "calories": 150,
+  "level": "easy",
+  "brief_title": "Customizable Fruit Salad",
+  "detailed_description": "This vibrant fruit salad lets you choose your favorite fruits—be it juicy watermelon, sweet strawberries, crisp apples, or tropical pineapple—and top it off with a drizzle of honey or a creamy yogurt dressing. A healthy, refreshing snack or side dish that’s perfect for any time of the day.",
+  "ingredients": [
+    "2 cups mixed seasonal fruits (e.g., strawberries, watermelon, apple, pineapple, etc.)",
+    "2 tbsp honey or 1/4 cup plain yogurt",
+    "1 tbsp lemon juice (optional)",
+    "Fresh mint leaves (optional)"
+  ],
+  "preparation": [
+    "Wash and chop your choice of fruits into bite-sized pieces.",
+    "In a large mixing bowl, combine the chopped fruits.",
+    "If using honey, drizzle over the salad and toss gently. For a yogurt dressing, mix the yogurt with lemon juice (optional) and stir through the fruits.",
+    "Top with fresh mint leaves for added flavor, if desired.",
+    "Serve chilled or at room temperature for a refreshing, healthy treat."
+  ]
+},{
+  "id": "15",
+  "name": "Honey Prawns",
+  "mealType": "lunch",
+  "img": "prawns.jpg",
+  "difficulty": "medium",
+  "description": "Succulent prawns glazed with a sweet and savory honey sauce.",
+  "author": "by SeafoodLovers",
+  "total_time": "20 mins",
+  "total_ingredients": 6,
+  "calories": 220,
+  "level": "medium",
+  "brief_title": "Honey Prawns",
+  "detailed_description": "Tender prawns tossed in a sweet honey glaze, with a hint of garlic and soy sauce, creating a perfect balance of flavors. Quick to make, yet full of rich, irresistible taste.",
+  "ingredients": [
+    "1 lb prawns, peeled and deveined",
+    "2 tbsp honey",
+    "1 tbsp soy sauce",
+    "1 tsp garlic, minced",
+    "1 tsp lemon juice",
+    "Olive oil for cooking"
+  ],
+  "preparation": [
+    "Heat olive oil in a pan over medium heat.",
+    "Add garlic and cook for 1 minute until fragrant.",
+    "Add prawns and cook for 2-3 minutes on each side until pink and cooked through.",
+    "In a small bowl, whisk together honey, soy sauce, and lemon juice.",
+    "Pour the honey mixture over the prawns and cook for another 2 minutes, tossing to coat.",
+    "Serve hot as an appetizer."
+  ]
+},{
+  "id": "16",
+  "name": "Cream cookies",
+  "mealType": "snacks",
+  "img": "cookies.jpg",
+  "difficulty": "easy",
+  "description": "Bright, colorful cookies with a creamy, sweet filling.",
+  "author": "by CookieJoy",
+  "total_time": "30 mins",
+  "total_ingredients": 7,
+  "calories": 180,
+  "level": "easy",
+  "brief_title": "Colorful Cookies",
+  "detailed_description": "Chewy, soft cookies packed with colorful sprinkles and filled with a smooth, sweet cream. A fun treat that adds a burst of color and sweetness to any occasion.",
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1/2 cup butter, softened",
+    "1/2 cup sugar",
+    "1 egg",
+    "1 tsp vanilla extract",
+    "1/4 cup colorful sprinkles",
+    "1/4 cup cream cheese, softened"
+  ],
+  "preparation": [
+    "Preheat the oven to 350°F (175°C) and line a baking sheet with parchment paper.",
+    "In a bowl, cream together butter and sugar until fluffy. Beat in the egg and vanilla extract.",
+    "Gradually add flour and mix until a dough forms.",
+    "Fold in the colorful sprinkles.",
+    "Scoop dough onto the baking sheet and bake for 10-12 minutes.",
+    "Once cooled, spread cream cheese on one cookie and sandwich with another.",
+    "Serve and enjoy these fun, creamy cookies!"
+  ]
+}
   ],
   "register_user": [
-    {
-      "id": "5e2f",
-      "name": "ji",
-      "email": "ji@gmail.com",
-      "password": "ji",
-      "Confirm_password": "ji"
-    },
-    {
-      "id": "a013",
-      "name": "pri",
-      "email": "j@gmail.com",
-      "password": "po",
-      "Confirm_password": "po"
-    },
-    {
-      "id": "05ee",
-      "name": "priya",
-      "email": "laxmi@gmail.com",
-      "password": "pri123",
-      "Confirm_password": "pri123"
-    },
-    {
-      "id": "70d2",
-      "name": "Iniyaazh",
-      "email": "ini@gmail.com",
-      "password": "ini",
-      "Confirm_password": "ini"
-    },
-    {
-      "id": "cb51",
-      "name": "nanda",
-      "email": "nanda@gmail.com",
-      "password": "12",
-      "Confirm_password": "12"
+  {
+    "id": "5e2f",
+    "name": "ji",
+    "email": "ji@gmail.com",
+    "password": "ji",
+    "Confirm_password": "ji",
+      "rating": 4,
+      "feedback": "I really love the variety of recipes available on this website. It's easy to find dishes based on ingredients, and the step-by-step instructions make cooking so much more enjoyable. However, I think the search feature could be a bit more refined."
+
+  },
+  {
+    "id": "a013",
+    "name": "pri",
+    "email": "j@gmail.com",
+    "password": "po",
+    "Confirm_password": "po",
+      "rating": 5,
+      "feedback": "This recipe finder website is fantastic! The design is user-friendly, and I can quickly find the recipes I want based on my preferences and ingredients. I appreciate the recipe suggestions and tips it provides. Great work!"
+  },
+  {
+    "id": "05ee",
+    "name": "priya",
+    "email": "laxmi@gmail.com",
+    "password": "pri123",
+    "Confirm_password": "pri123",
+    
+      "rating": 3,
+      "feedback": "The website is good, and I find most of the recipes I need, but the interface can be a bit slow at times. It could also benefit from more diverse recipes for various cuisines. Otherwise, it's a great tool for home cooks."
+    
+  },
+  {
+    "id": "70d2",
+    "name": "Iniyaazh",
+    "email": "ini@gmail.com",
+    "password": "ini",
+    "Confirm_password": "ini",
+      "rating": 4,
+      "feedback": "A very helpful site for discovering new recipes! I love how you can filter by ingredients and dietary needs. It would be nice to have a meal-planning feature added to save favorite recipes and create shopping lists."
+
+  },
+  {
+    "id": "cb51",
+    "name": "gowri",
+    "email": "gowri@gmail.com",
+    "password": "12",
+    "Confirm_password": "12",
+      "rating": 4,
+      "feedback": "I enjoy using this recipe finder website. It provides lots of options for recipes, and I can easily browse based on what ingredients I have at home. One suggestion would be to improve the recipe photos to make the website more visually appealing."
     }
+  
+
+
   ]
 }

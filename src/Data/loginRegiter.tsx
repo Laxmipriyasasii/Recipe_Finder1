@@ -12,6 +12,27 @@ export const loginField = [
       className: 'input-field'
     }
 ]
+export const Cate_gories=[
+  {
+    title:'breakfast',
+    img:'breakfast.jpg'
+  }, {
+    title:'lunch',
+    img:'lunch.jpg'
+  },
+   {
+    title:'dinner',
+    img:'dinner.jpg'
+  },
+   {
+    title:'snacks',
+    img:'samosa.jpg'
+  },
+   {
+    title:'all recipes',
+    img:'allrecipe.jpg'
+  }
+]
 export const navBar=[
   {id:'home',
   link:'/',
@@ -22,13 +43,13 @@ export const navBar=[
   title:'recipes'
   },
   {id:'about',
-    link:'/',
+    link:'/about',
     title:'about'
   },
-   {id:'saved',
-    link:'/saved',
-    title:'saved'
-  }
+  //  {id:'saved',
+  //   link:'/saved',
+  //   title:'saved'
+  // }
 ]
 export const registerField = [
     {
@@ -60,3 +81,5 @@ export const registerField = [
       icon:'pass',
     }
 ]
+export const About_img=["pancake_abt.jpg","Noodles.jpg","Waffles.jpg","cup_cakes.jpg","cookies.jpg","juices.jpg","prawns.jpg","rice.jpg","chicke.jpg"]
+

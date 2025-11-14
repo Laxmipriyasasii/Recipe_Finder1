@@ -11,7 +11,7 @@ export default function Todayrecipe() {
   const [recipe, setRecipe] = useState<Recipe[]>([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/recipes')
+    axios.get('http://localhost:3001/recipes')   
       .then(res => {
         setRecipe(res.data)
         const dayOfYear = new Date().getDate();

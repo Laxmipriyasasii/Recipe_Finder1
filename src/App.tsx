@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Allrecipes from './components/Allrecipes';
 import Carousel from './components/Carousel';
+import AboutSection from './components/AboutSection';
 
 
 export default function App() {
@@ -18,8 +19,9 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path='/register' element={<Register/>}/>
           <Route path='/caro' element={<Carousel/>}/>
-          <Route path='/recipes' element={<Allrecipes/>}/>
+          <Route path='/recipes/:title?' element={<Allrecipes/>}/>
           <Route path="/recipe/:id" element={<SingleRecipe />} />
+          <Route path="/about" element={<AboutSection/>} />
         </Routes>
       </Router>
     </>

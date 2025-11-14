@@ -2,6 +2,7 @@
   id: number;
   brief_title:string;
   name: string;
+  
   mealType: string;
   detailed_description:string;
   img: string;
@@ -15,4 +16,13 @@
   ingredients: string[];
   preparation: string[];
   isFavorite?: boolean;  // Optional field for favorite status
+}
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  Confirm_password: string;
+  feedback:string;
+  rating:number;
 }

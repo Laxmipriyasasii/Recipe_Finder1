@@ -8,12 +8,15 @@ import { Button, Container, Grid, Stack } from '@mui/material';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 
 export default function Allrecipes() {
+      const { title } = useParams();  // Capture the meal type from the URL
+    console.log("title:", title); 
      const navigate = useNavigate()
-    const [mealtype, setMealtype] = useState('all recipe')
-    const [meal, setMeal] = useState(["all recipe", "breakfast", "lunch", "snacks", "dinner"]);
+    const [mealtype, setMealtype] = useState(title ||'all recipe')
+    const [meal, setMeal] = useState(["all recipes", "breakfast", "lunch", "snacks", "dinner"]);
     const [allRecipes, setAllRecipes] = useState<Recipe[]>([]);
     const [recipe, setRecipe] = useState<Recipe[]>([]);
     const [showall, setShowall] = useState(false);
@@ -24,9 +27,9 @@ export default function Allrecipes() {
     const [error, setError] = useState("");
     const [savedata, setSavedata] = useState<Recipe[]>([]);
 
-    const Mealtype = (meal: string) => {
+     const Mealtype = (meal: string) => {
         setMealtype(meal)
-        if (meal === 'all recipe') {
+        if (meal === 'all recipes') {
             setDelay([])
             setRecipe(allRecipes)
         }
@@ -40,7 +43,22 @@ export default function Allrecipes() {
         axios.get('http://localhost:3001/recipes')
             .then(res => {
                 setAllRecipes(res.data)
-                setRecipe(res.data)
+                   //this is not consoling in terminal
+                if(title){
+                    if(title==='all recipes'){
+                        setRecipe(res.data)
+                        
+                    }
+                    else{
+                    const filteredRecipes = res.data.filter((recipe: Recipe) => recipe.mealType.toLowerCase() === title.toLowerCase());
+                    setRecipe(filteredRecipes);
+                    }
+                    
+                }
+                else{
+                    setRecipe(res.data)
+                    setMealtype('all recipes')
+                }
 
             })
             .catch(err => {
@@ -98,6 +116,7 @@ export default function Allrecipes() {
 
                 <Grid container spacing={0} className='rec'>
                     {meal.map((meal) => {
+                        
                         return (
                             <Grid size={{ xs: 12, md: 2.4, lg: 2.4 }} className={`border-bottom text-center pad ternary ${mealtype === meal ? 'selected' : 'none'}`} onClick={() => Mealtype(meal)}>{meal}</Grid>
                         )
@@ -109,7 +128,7 @@ export default function Allrecipes() {
                     {filteredData.map((data: any) => {
                         // const arr = data;
                         // console.log("arr", arr)
-
+                        console.log("meal",filteredData)
                         return (
 
                             <Grid size={{ xs: 12, md: 4, lg: 3 }} className="c recipe-item rec">
@@ -133,4 +152,5 @@ export default function Allrecipes() {
 
         </>
     )
+    
 }

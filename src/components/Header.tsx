@@ -23,7 +23,7 @@ export default function Header() {
         justifyContent: "space-between",
         alignItems: "center",
       }}>
-        <Grid size={{ xs: 6, md: 12, lg: 3.5 }}>
+        <Grid size={{ xs: 12, md: 12, lg: 3.5 }}>
           <Link className='text-decoration' to='/'><div className='log'>
             <span className="material-symbols-outlined logo">
               room_service
@@ -32,14 +32,14 @@ export default function Header() {
           </div></Link>
         </Grid>
 
-        <Grid size={{ xs: 6, md: 12, lg: 5.5 }}>
+        <Grid size={{ xs: 12, md: 12, lg: 5.5 }}>
           <ul style={{ padding: '6px 30px', display: 'flex', margin: '0' }} className='justify-center'>
             {navBar.map((navList) => (
               <Link to={navList.link} key={navList.id} className='text-decoration'><h3 className='nav-list'>{navList.title}</h3></Link>
             ))}
           </ul>
         </Grid>
-        <Grid size={{ xs: 6, md: 12, lg: 3 }}>
+        <Grid size={{ xs: 12, md: 12, lg: 3 }}>
           <ul style={{ padding: '6px 30px', display: 'flex', margin: '0' }} className='justify-end'>
             {!isAuthenticated ? <><Link to="/login" className='text-decoration'><h3 className='login-nav-list'>Sign-In</h3></Link><Link to="/register" className='text-decoration '><h3 className='nav-list logi'>Sign-Up</h3></Link></>
               : <><div className='pad10'><h3 className='profile' onClick={profileToggle}>{firstletter}</h3>

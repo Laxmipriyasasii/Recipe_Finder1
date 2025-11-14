@@ -10,6 +10,7 @@ type Recipe = {
   name: string;
   description: string;
   img: string;
+  total_time:string;
   mealType: "all recipe" | "breakfast" | "dinner" | "snacks" | "lunch";
   author: string;
   total_ingredients: number;
@@ -40,7 +41,19 @@ export default function SingleRecipe() {
       <Grid container spacing={5}>
         <Grid size={{xs:12,md:5}}><img src={`../src/assets/${recipe?.img}`} className='food-img'></img></Grid>
         <Grid size={{xs:12,md:7}}>
-          <h1 className='reci-name mb-0'>{recipe?.name}</h1>
+
+          <Grid container spacing={0}>
+            <Grid size={{xs:12,md:10}}>
+            <h1 className='reci-name mb-0'>{recipe?.name}</h1>
+            </Grid>
+            <Grid size={{xs:12,md:2}}>
+              
+                <h4 className='mar-0 err-text purple fa-10 new_flex'>
+                   <span className="material-symbols-outlined purple font-large">schedule </span> 
+                   &nbsp;{recipe?.total_time}</h4>
+            </Grid>
+            
+            </Grid>
           <p className=' ternary'>{recipe?.author}</p>
           <Grid container spacing={3}>
             <Grid size={4} className='sub-list text-center'  >

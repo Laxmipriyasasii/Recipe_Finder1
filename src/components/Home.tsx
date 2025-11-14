@@ -12,6 +12,9 @@ import type { RootState } from '../store'
 import Carousel from './Carousel';
 import New_recipe from './New_recipe';
 import Todayrecipe from './Todayrecipe';
+import Categories from './Categories';
+import AboutSection from './AboutSection';
+import Feedback from './Feedback';
 
 
 export default function Home() {
@@ -48,12 +51,12 @@ export default function Home() {
     }, [])
     useEffect(() => {
         setmessage('Loading')
-        
-            setDelay(recipe)
-            setmessage(null)
-            console.log("delayed value", delay)
-       
-        
+
+        setDelay(recipe)
+        setmessage(null)
+        console.log("delayed value", delay)
+
+
     }, [recipe])
 
     const filteredData = delay.filter((recipe: any) => {
@@ -106,7 +109,7 @@ export default function Home() {
                         <p>search any recipe e.g. burger, pizza, sandwich, toast...</p>
                     </div>
                 </div>
-               
+
                 <div className='recipess'>
                     {/* <div style={{ display: 'flex', alignItems: 'center'}}>
                         <span className="material-symbols-outlined orangish">
@@ -115,13 +118,13 @@ export default function Home() {
                     <h2 className='recipe-list orangish subtitle'>Recipes for You</h2>
                     </div> */}
                     <div className='pad-30'>
-                       
+
                         <h3 className=' title orangish text-center pad-10 mar-0'>Find Your Next Meal</h3>
                         <p className='ternary text-center mar-0'>Whether you're a novice or an expert in the Kitchen, there's somethimg here for everyone</p>
 
                     </div>
 
-                    
+
                     {/* <Grid container spacing={0}>
                         {meal.map((meal) => {
                             return (
@@ -143,17 +146,22 @@ export default function Home() {
 
                             return (
 
-                                 <Grid size={{ xs: 12, md: 4, lg: 3 }} className="c recipe-item rec">
-                                     <Link  to={`/recipe/${data.id}`} className='text-decoration'>
+                                <Grid size={{ xs: 6, md: 4, lg: 3 }} className="c recipe-item rec">
+                                    <Link to={`/recipe/${data.id}`} className='text-decoration'>
                                         <img src={`../src/assets/${data.img}`} className='food-image '></img>
+                                        </Link>
                                         <div className=''>
-                                    <div className='flex space-between pad-10'><h4 className='ternary mar-0'>{data.name}</h4>
-                                        {save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
-                                    </div>
-                                    <p className='ternary mar-0 pad-10-top card-desc'>{data.description}</p>
-                                    <Link  to={`/recipe/${data.id}`} className='orangish text-decoration link-recipe padding' >View recipe </Link>
-                                    </div>
-                                    </Link>
+                                            <div className='flex space-between pad-10'>
+                                                <Link to={`/recipe/${data.id}`} className='text-decoration'>
+                                                <h4 className='ternary mar-0'>{data.name}</h4></Link>
+                                                {save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
+                                            </div>
+                                            <Link to={`/recipe/${data.id}`} className='text-decoration'>
+                                            <p className='ternary mar-0 pad-10-top card-desc'>{data.description}</p>
+                                            </Link>
+                                            <Link to={`/recipe/${data.id}`} className='orangish text-decoration link-recipe padding' >View recipe </Link>
+                                        </div>
+                                    
                                 </Grid>
                             )
                         })}
@@ -169,11 +177,11 @@ export default function Home() {
 
 
                 </div>
-                 <div className="bg-black">
-                            
-                    <Todayrecipe/>
-               </div>
-                  {/* <div className="recipess pad-10">
+                <div className="bg-black">
+
+                    <Todayrecipe />
+                </div>
+                {/* <div className="recipess pad-10">
                  <div className='log2 '>
                         <span className="material-symbols-outlined title-icon">
                             local_dining
@@ -183,25 +191,34 @@ export default function Home() {
                     </div>
                     <New_recipe/>
                </div> */}
-              
-               <div className="recipess " >
-               <div style={{paddingBottom:'30px'}}>
+
+                <div className="recipess " >
+                    <div style={{ paddingBottom: '30px' }}>
 
 
-                <div className='pad-30'>
-                       
-                        <h3 className=' title orangish text-center pad-10 mar-0'>Recently Added Recipes</h3>
-                        <p className='ternary text-center mar-0'>Explore all our latest recipes of the week</p>
+                        <div className='pad-30'>
 
+                            <h3 className=' title orangish text-center pad-10 mar-0'>Recently Added Recipes</h3>
+                            <p className='ternary text-center mar-0'>Explore all our latest recipes of the week</p>
+
+                        </div>
+                        <Carousel />
                     </div>
-                    <Carousel/>
-                    </div>
-               </div>
+                </div>
+                <div className="bg-black cate-pad">
+
+                    <Categories />
+                </div>
+               
+
+                    <Feedback/>
+                
 
             </Stack>
-            <footer style={{height:'20px',backgroundColor:'black',color:'white'}}>
-<p className='text-center'>&copy; 2025 Food18. All rights reserved.</p>
-</footer>
+
+            <footer style={{ height: '20px', backgroundColor: 'black', color: 'white' }}>
+                <p className='text-center'>&copy; 2025 Food18. All rights reserved.</p>
+            </footer>
         </>
 
 

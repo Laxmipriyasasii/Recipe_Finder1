@@ -5,17 +5,18 @@ body{
     width:100%;
     height:350px;
     border-radius: 10px;
-    
-  top: 100px; 
+    object-fit: cover;
+    top: 100px; 
     position: sticky;
 }
+ 
 .sub-list{
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
         padding: 10px;
         border-radius: 5px;
 }
 .text-center {
-    text-align: center;
+    text-align: center;  
 }
 .sub-list1{
      color:#833AB4;
@@ -30,6 +31,10 @@ color: #787d7d;
 }
 .mt-0{
     margin-top: 0 !important;
+}
+.new_flex{
+        display: flex;
+    margin-top: 32px;
 }
 .reci-name{
     color:rgba(253, 29, 29, 1);

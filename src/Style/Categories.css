@@ -1,0 +1,27 @@
+.cate-img{
+       width: 104px;
+    border-radius: 50%;
+    height: 104px;
+    object-fit: cover;
+}
+.cate-img:hover{
+     border: 3px solid rgba(253, 29, 29, 1) ;
+    border-radius: 50%;
+    
+    object-fit: cover;
+}
+.div-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.white{
+    color:white;
+}
+.cat-text:hover{
+color:rgba(253, 29, 29, 1)
+}
